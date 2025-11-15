@@ -126,42 +126,6 @@ def isfit(proxy, mark, save=False):
 			return
 
 
-'''
-	        if args.pE:
-	                if proxy["anonymityLevel"] == "elite":
-	                        show_proxy_infos(proxy, mark)
-	                        alreadyshow.append(proxy['_id'])
-	                        if save:
-	                        	save_in_file(proxy)
-	                        return
-	        if args.s4:
-	                if 'socks4' in proxy['protocols']:
-	                        show_proxy_infos(proxy, mark)
-	                        alreadyshow.append(proxy['_id'])
-	                        if save:
-	                        	save_in_file(proxy)
-	                        return
-	        if args.s5:
-	                if 'socks5' in proxy['protocols']:
-	                        show_proxy_infos(proxy, mark)
-	                        alreadyshow.append(proxy['_id'])
-	                        if save:
-	                        	save_in_file(proxy)
-	                        return
-	        if args.http:
-	                if 'http' in proxy['protocols']:
-	                        show_proxy_infos(proxy, mark)
-	                        alreadyshow.append(proxy['_id'])
-	                        if save:
-	                        	save_in_file(proxy)
-	                        return
-	        if not (args.pE or args.s4 or args.s5 or args.http):
-	                show_proxy_infos(proxy, mark)
-	                alreadyshow.append(proxy['_id'])
-	                return
-	        return
-'''
-
 if __name__ == '__main__':
 	print ('[\033[32mINFO\033[m] Looking for proxies...')
 	get_proxy_list()
